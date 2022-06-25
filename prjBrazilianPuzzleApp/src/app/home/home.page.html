@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="fnd">
+    <ion-title class="title">
+      CHARADA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">CHARADA</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <div id="pergunta" class="d-flex">
+
+      <div id="img">
+          <img src="https://s.aficionados.com.br/imagens/captura-de-ecra-2017-02-16-a-s-23-47-33_cke.jpg">
+     </div>
+     <br>
+
+     <div class="perg">
+      <ion-text>
+        PERGUNTA
+      </ion-text>
+    </div>
+
+      <br>
+
+      {{charada.pergunta}}
+
+    </div>
+    
+    <div id="revelar">
+      <br>
+      <ion-button (click)="revelarResposta()" color="light" shape="round">Revelar Resposta</ion-button>
+    </div>
+    <br>
+
+    <div class="resposta" *ngIf="revelar">
+      {{charada.resposta}}
+    </div>
+
+    <br>
+    <br>
+
+    <div id="solicitar">
+      <br>
+      <ion-button (click)="pegarDados()" color="light" shape="round">Solicitar nova charada</ion-button>
+    </div>
+    <br>
+
+  </div>
+</ion-content>

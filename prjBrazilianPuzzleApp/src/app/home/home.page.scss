@@ -1,0 +1,46 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+
+.fnd{
+  --background: black;
+  color: rgb(46, 206, 46);
+  text-align: center;
+}
+
+ion-content{
+  --ion-background-color: black;
+}
+
+.perg{
+  color: gold;
+}
+
+#pergunta{
+  font-size: 30px;
+  font-family: Georgia;
+  font-weight: bold;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.resposta{
+  color: rgb(46, 206, 46);
+  font-weight: bold;
+  font-family: Georgia;
+  font-size: 25px;
+}
+
+.title{
+  padding-top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family:Verdana;
+}
